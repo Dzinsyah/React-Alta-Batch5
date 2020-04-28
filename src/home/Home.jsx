@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../component/Navigation";
+import Navigation from "../navigation/Navigation";
 
 class Home extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import Navigation from "../component/Navigation";
+import Navigation from "../navigation/Navigation";
 
 const Profile = (props) => {
   // get data is_login, email and full_name from local storage

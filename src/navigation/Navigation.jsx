@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.svg";
-import Search from "./Search";
+import Search from "../news/Search";
 
 const logoWrapper = {
   display: "block",

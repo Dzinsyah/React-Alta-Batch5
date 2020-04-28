@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 
-import Home from "../pages/Home";
-import News from "../pages/News";
-import NotMatch from "../pages/NotMatch";
-import Profile from "../pages/Profile";
-import SignIn from "../pages/SignIn";
+import Home from "./home/Home";
+import News from "./news/News";
+import NotMatch from "./notMatch/NotMatch";
+import Profile from "./profile/Profile";
+import SignIn from "./signIn/SignIn";
 
 const MainRoutes = () => {
   return (

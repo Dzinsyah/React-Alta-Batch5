@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
-import Navigation from "../component/Navigation";
+import Navigation from "../navigation/Navigation";
 
 class SignIn extends Component {
   state = { namaPengguna: "", kataKunci: "" };

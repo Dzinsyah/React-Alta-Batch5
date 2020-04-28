@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 // Custom components
-import ListNews from "../component/ListNews";
-import Navigation from "../component/Navigation";
+import ListNews from "./ListNews";
+import Navigation from "../navigation/Navigation";
 
 // News API
 const apiKey = "44687f6f58184f6385947cb55a41ac62";

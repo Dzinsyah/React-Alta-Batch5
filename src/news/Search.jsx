@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Search = props => {
+const Search = (props) => {
   return (
     <section className="topsection">
       <h4>{props.title}</h4>
@@ -21,7 +21,7 @@ const Search = props => {
 
 Search.propTypes = {
   title: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired
+  placeholder: PropTypes.string.isRequired,
 };
 
 export default Search;
