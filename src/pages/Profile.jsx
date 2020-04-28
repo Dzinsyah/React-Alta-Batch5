@@ -10,7 +10,14 @@ const Profile = (props) => {
 
   // set condition when status login == null, redirect to signin and show profile when is login is not null
   if (is_login === null) {
-    return <Redirect to={{ pathname: "/signin" }} />;
+    return (
+      <Redirect
+        to={{
+          pathname: "/signin",
+          state: { message: "gagal login ya.." },
+        }}
+      />
+    );
   } else {
     return (
       <React.Fragment>

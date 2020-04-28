@@ -39,6 +39,10 @@ class SignIn extends Component {
   };
 
   render() {
+    const message = this.props.location.state
+      ? this.props.location.state.message
+      : "tidak ada parameter";
+
     return (
       <React.Fragment>
         <Navigation {...this.props} />
@@ -83,6 +87,7 @@ class SignIn extends Component {
             >
               Reset
             </button>
+            <p style={{ color: "red" }}>{message}</p>
           </form>
         </section>
       </React.Fragment>
