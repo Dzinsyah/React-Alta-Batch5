@@ -16,23 +16,20 @@ class News extends Component {
     search: "",
   };
 
-  componentDidMount = () => {
+  componentDidMount = async () => {
     // get params from url
-    const paramCategory = this.props.match.params.category;
-
-    // set url request by category
-    const endpoint = urlHeadline + "&category=" + paramCategory;
+    const paramCategory = await this.props.match.params.category;
 
     // get news from api
-    this.getNews(endpoint);
+    this.getNews(paramCategory);
   };
 
   // function get list news from api
-  getNews = async (endpoint) => {
+  getNews = async (category) => {
     // set condition if params url undefined
     let url;
-    if (url) {
-      url = endpoint;
+    if (category) {
+      url = urlHeadline + "&category=" + category;
     } else {
       url = urlHeadline;
     }
@@ -111,7 +108,7 @@ class News extends Component {
         <Navigation
           doSearch={(event) => this.handleInputChange(event)}
           handleRouter={(e) => this.handleRequestCategoryNews(e)}
-          getNews={this.getNews}
+          getNews={() => this.getNews()}
           keyword={this.state.search}
           placeholder="ketik sesuatu"
           {...this.props}

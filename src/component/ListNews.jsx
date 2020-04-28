@@ -1,11 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import { useParams } from "react-router-dom";
 
 const style = {
-  maxWidth: "180px"
+  maxWidth: "180px",
 };
 
-const ListNews = props => {
+const ListNews = (props) => {
+  // const { category } = useParams();
+  // console.warn("cek category stateless", category);
   // console.warn("cek props pada list news", props);
   const url = props.url !== null || props.url !== "" ? props.url : "#";
   const target =
@@ -31,7 +34,7 @@ const ListNews = props => {
 ListNews.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  img: PropTypes.string
+  img: PropTypes.string,
 };
 
 export default ListNews;

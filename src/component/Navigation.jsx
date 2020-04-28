@@ -11,6 +11,17 @@ const logoWrapper = {
 };
 
 class Navigation extends React.Component {
+  // function to change router by category news
+  changeRouter = async (category) => {
+    // condition when handleRouter undefined/not
+    if (this.props.handleRouter) {
+      this.props.handleRouter(category);
+    } else {
+      // redirect pages to endpoint news-category
+      await this.props.history.replace("/news-category/" + category);
+    }
+  };
+
   // function to do logout
   postSignout = () => {
     localStorage.removeItem("is_login");
@@ -39,21 +50,24 @@ class Navigation extends React.Component {
             <Link onClick={this.postSignout}>SignOut</Link>
           </li>
           <li className="menu">
-            <Link to="/news" onClick={this.props.getNews}>
+            <Link
+              to="/news"
+              onClick={this.props.getNews ? () => this.props.getNews() : null}
+            >
               News
             </Link>
           </li>
           <li
             className="menu"
             value="sport"
-            onClick={() => this.props.handleRouter("sports")}
+            onClick={() => this.changeRouter("sports")}
           >
             Olah Raga
           </li>
           <li
             className="menu"
             value="business"
-            onClick={() => this.props.handleRouter("business")}
+            onClick={() => this.changeRouter("business")}
           >
             Bisnis
           </li>
