@@ -1,8 +1,11 @@
 import React from "react";
 import Navigation from "../component/Navigation";
+import { connect } from "react-redux";
 
 class Home extends React.Component {
   render() {
+    console.warn("Cek props masuk", this.props);
+
     return (
       <React.Fragment>
         <Navigation {...this.props} />
@@ -14,4 +17,9 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    haha: state,
+  };
+};
+export default connect(mapStateToProps)(Home);
