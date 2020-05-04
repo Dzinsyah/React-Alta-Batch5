@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5d3d956.chunk.css",
-    "main.js": "/static/js/main.97e94b93.chunk.js",
-    "main.js.map": "/static/js/main.97e94b93.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dc7fc8ac.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dc7fc8ac.js.map",
-    "static/js/2.b7086350.chunk.js": "/static/js/2.b7086350.chunk.js",
-    "static/js/2.b7086350.chunk.js.map": "/static/js/2.b7086350.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.0164152affe834feff9751999eae8281.js": "/precache-manifest.0164152affe834feff9751999eae8281.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f5d3d956.chunk.css.map": "/static/css/main.f5d3d956.chunk.css.map",
-    "static/js/2.b7086350.chunk.js.LICENSE.txt": "/static/js/2.b7086350.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/React-Alta-Batch5/static/css/main.f5d3d956.chunk.css",
+    "main.js": "/React-Alta-Batch5/static/js/main.f19158da.chunk.js",
+    "main.js.map": "/React-Alta-Batch5/static/js/main.f19158da.chunk.js.map",
+    "runtime-main.js": "/React-Alta-Batch5/static/js/runtime-main.6516d8d1.js",
+    "runtime-main.js.map": "/React-Alta-Batch5/static/js/runtime-main.6516d8d1.js.map",
+    "static/js/2.b7086350.chunk.js": "/React-Alta-Batch5/static/js/2.b7086350.chunk.js",
+    "static/js/2.b7086350.chunk.js.map": "/React-Alta-Batch5/static/js/2.b7086350.chunk.js.map",
+    "index.html": "/React-Alta-Batch5/index.html",
+    "precache-manifest.7dc388580a19a3bea4ba2d1386e584c9.js": "/React-Alta-Batch5/precache-manifest.7dc388580a19a3bea4ba2d1386e584c9.js",
+    "service-worker.js": "/React-Alta-Batch5/service-worker.js",
+    "static/css/main.f5d3d956.chunk.css.map": "/React-Alta-Batch5/static/css/main.f5d3d956.chunk.css.map",
+    "static/js/2.b7086350.chunk.js.LICENSE.txt": "/React-Alta-Batch5/static/js/2.b7086350.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/React-Alta-Batch5/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc7fc8ac.js",
+    "static/js/runtime-main.6516d8d1.js",
     "static/js/2.b7086350.chunk.js",
     "static/css/main.f5d3d956.chunk.css",
-    "static/js/main.97e94b93.chunk.js"
+    "static/js/main.f19158da.chunk.js"
   ]
 }
