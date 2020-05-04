@@ -4,11 +4,6 @@ import Navigation from "../component/Navigation";
 import { connect } from "react-redux";
 
 const Profile = (props) => {
-  // get data is_login, email and full_name from local storage
-  // const is_login = JSON.parse(localStorage.getItem("is_login"));
-  // const email = localStorage.getItem("email");
-  // const full_name = localStorage.getItem("full_name");
-
   // set condition when status login == null, redirect to signin and show profile when is login is not null
   if (!props.dataUser.is_login) {
     return (

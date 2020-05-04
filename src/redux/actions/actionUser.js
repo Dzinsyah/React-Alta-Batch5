@@ -19,3 +19,10 @@ export const doLogin = (props) => {
       });
   };
 };
+
+export const changeInputUser = (e) => {
+  return {
+    type: "CHANGE_INPUT_USER",
+    payload: e,
+  };
+};
