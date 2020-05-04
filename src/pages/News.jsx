@@ -5,8 +5,8 @@ import ListNews from "../component/ListNews";
 import Navigation from "../component/Navigation";
 
 // News API
-const apiKey = "44687f6f58184f6385947cb55a41ac62";
-const baseUrl = "https://newsapi.org/v2/";
+const apiKey = process.env.REACT_APP_API_KEY;
+const baseUrl = process.env.REACT_APP_BASE_URL;
 const urlHeadline = baseUrl + "top-headlines?country=id&apiKey=" + apiKey;
 
 class News extends Component {
